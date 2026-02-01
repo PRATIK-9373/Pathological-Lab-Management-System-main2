@@ -1,4 +1,4 @@
-# Pathological-Lab-Management
+#  New Pathological-Lab-Management using create AI 😃
 Online Pathological Laboratory Management System using PHP, Bootstrap and MYSQL with dedicated Admin Panel
 
 ## Note:
