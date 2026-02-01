@@ -1,0 +1,11 @@
+I have verified and polished the popup logic in `register.php`.
+
+**Implemented Logic:**
+1.  **Success Trigger**: When the backend says "success".
+2.  **Popup**: Calls `alert_toast("Registration successful", 'success')` which shows a nice popup at the top (using the SweetAlert2 library your project already has).
+3.  **Delay**: Waits **2 seconds** so you can actually read the message.
+4.  **Redirect**: Then sends you to the Login page.
+
+I also cleaned up the file by removing the temporary debug logs (`console.log`) I added earlier, so it's clean and "production-ready".
+
+Please give it a try!

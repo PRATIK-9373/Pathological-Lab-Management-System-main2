@@ -1,0 +1,17 @@
+I have solved the redirection issue by upgrading your login system to be a **Unified Login**.
+
+Now, the "Client Login" page (`login.php`) is smart:
+1.  **If you enter Admin credentials**: It detects you are an Admin, logs you in as Admin, and **redirects you to the Admin Dashboard**.
+2.  **If you enter Patient credentials**: It detects you are a Patient, logs you in as Client, and redirects you to the Patient Home.
+
+**Changes Made:**
+*   **Backend (`classes/Login.php`)**: I updated `client_login` to check the `users` (Admin) table *first*. If it finds a match, it grants Admin access.
+*   **Frontend (`login.php`)**: I updated the Javascript to check the login type (`1` for Admin, `2` for Client) and redirect to the correct URL accordingly.
+
+**How to test:**
+1.  Go to `http://localhost/Pathological-Lab-Management-System-main/login.php`
+2.  Enter your **Admin Username** and **Password** (even though the field says "Email").
+3.  Click Sign In.
+4.  You should be redirected to the **Admin Dashboard**.
+
+Does this work for you?
